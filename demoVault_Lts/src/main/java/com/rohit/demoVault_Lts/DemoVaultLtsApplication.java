@@ -16,11 +16,6 @@ public class DemoVaultLtsApplication {
 	@Value("${db_password}")
 	String password;
 	
-	@Value("${splunk}")
-	File splunk_cert;
-	
-	@Value("${godaddy_ca.crt}")
-	File godaddy_cert;
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoVaultLtsApplication.class, args);
@@ -31,8 +26,6 @@ public class DemoVaultLtsApplication {
 		System.out.println("============================");
 		System.out.println(username);
 		System.out.println(password);
-		System.out.println(splunk_cert);
-		System.out.println(godaddy_cert);
 		System.out.println("============================");
 	}
 }

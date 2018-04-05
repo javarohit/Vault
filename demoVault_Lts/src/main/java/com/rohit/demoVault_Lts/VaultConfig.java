@@ -13,6 +13,7 @@ import org.springframework.vault.client.VaultEndpoint;
 import org.springframework.vault.config.AbstractVaultConfiguration;
 
 @Configuration
+@VaultPropertySource("secret/my_database_access")
 @VaultPropertySource("secret/certs")
 public class VaultConfig extends AbstractVaultConfiguration {
 
